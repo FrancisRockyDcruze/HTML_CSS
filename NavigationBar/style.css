@@ -1,0 +1,163 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Rubik Dirt', cursive;
+}
+
+.logo:hover {
+    background-color: rgb(182, 156, 156);
+}
+
+ul {
+    /* border: 2px solid black; */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(182, 156, 156);
+    border-radius: 25px;
+}
+
+@media (min-width: 680px) {
+    .search {
+        display: inline-block;
+        position: absolute;
+        right: 80px;
+        top: 15px;
+        margin: 2px 2px;
+    }
+}
+
+@media (max-width: 680px) {
+    .search {
+        display: block;
+        margin: 105px 2px;
+    }
+}
+
+#searchText {
+    /* border: 2px solid yellow; */
+    width: 125px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+nav li{
+    font-size: 30px;
+}
+
+li {
+    float: left;
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: rgb(244, 223, 223);
+}
+
+.logo:hover {
+    background-color: rgb(182, 156, 156);
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.contact-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(114, 199, 189);
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.contact-content a:hover {
+    background-color: rgb(207, 241, 238);
+    border-radius: 15px;
+}
+
+.dropdown:hover .contact-content {
+    display: block;
+}
+
+.head1 {
+    display: inline-block;
+    padding: 14px;
+}
+
+.Detail-page {
+    border: 2px solid black;
+    margin: 60px 50px;
+    border-radius: 30px;
+    font-family: 'Blaka Ink', cursive;
+    background-color: rgb(198, 218, 216);
+}
+
+.form input {
+    display: block;
+    text-align: center;
+    border: 2px solid rgb(182, 156, 156);;
+    margin: 15px auto;
+    border-radius: 14px;
+}
+
+@media(max-width: 650px) {
+    .contact-content{
+        font-size: 19px;
+    }
+    .Detail-page{
+        margin: 40px auto;
+        padding: 15px 70px;
+    }
+
+    .form input{
+        font-size: 13px;
+        width: 100%;
+        margin: 10px 2px;
+    }
+    .Detail-page h1 {
+        text-align: center;
+        font-size: 18px;
+        margin: auto;
+    }
+}
+
+@media(min-width: 800px) {
+
+    .Detail-page{
+        width: 33%;
+        padding: 15px 50px;
+    }
+    .form input{
+        font-size: 25px;
+        width: 70%;
+    }
+
+    .Detail-page h1 {
+        text-align: center;
+        font-size: 41px;
+    }
+}
+
+.Detail-page button {
+    display: block;
+    width: 70%;
+    margin: 20px auto;
+    border-radius: 15px;
+    font-size: 30px;
+    background-color: rgb(182, 156, 156);
+    font-weight: bold;
+}
+
+.Detail-page button:hover {
+    background-color: rgb(251, 242, 113);
+}
