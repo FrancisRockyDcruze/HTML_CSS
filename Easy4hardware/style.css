@@ -3,11 +3,6 @@ body {
     font-family: 'Rubik Dirt', cursive;
     background-image: url('https://images.unsplash.com/photo-1603732551681-2e91159b9dc2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGNvbXB1dGVyJTIwcGFydHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
 }
-
-.logo:hover {
-    background-color: rgb(182, 156, 156);
-}
-
 ul {
     /* border: 2px solid black; */
     list-style-type: none;
