@@ -1,93 +1,131 @@
 body {
+    margin: 0;
+    padding: 0;
     background-color: rgb(255, 255, 255);
     font-family: 'Rubik Dirt', cursive;
     background-image: url('https://images.unsplash.com/photo-1603732551681-2e91159b9dc2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGNvbXB1dGVyJTIwcGFydHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
 }
-ul {
-    /* border: 2px solid black; */
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(182, 156, 156);
-    border-radius: 25px;
+.head{
+    position: relative;
 }
-
-@media (min-width: 700px) {
-    .search {
-        display: inline-block;
-        position: absolute;
-        right: 80px;
-        top: 15px;
-        margin: 2px 2px;
-    }
+.head::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("https://cdn.pixabay.com/photo/2017/01/06/09/33/construction-material-1957326__340.jpg");
+    opacity: 0.7;
+    top: 1px;
+    width: 100%;
+    height: 100%;
 }
-
-@media (max-width: 700px) {
-    .search {
-        display: block;
-        margin: 105px 2px;
-    }
-}
-
-#searchText {
-    /* border: 2px solid yellow; */
-    width: 125px;
-    height: 30px;
-    border-radius: 20px;
+.head h1{
+    position: relative;
     text-align: center;
+    font-size: 35px;
+    letter-spacing: 35px; 
+    font-family: 'Blaka Ink', cursive;
+    margin: 0;
 }
-nav li{
-    font-size: 30px;
+.header {
+    /* border: 2px solid red; */
+    background-color: rgb(182, 156, 156);
+    display: inline-block;
+    width: 100%;
 }
 
-li {
-    float: left;
+.logo {
+    /* border: 2px solid black; */
+    display: inline-block;
+    width: 50px;
+    margin: 0px 10px;
 }
 
-li a,
+.head1 {
+    font-size: 28px;
+    padding: 14px;
+}
+
+nav ul {
+    /* border: 2px solid blue; */
+    display: inline-block;
+    margin: 0px;
+    width: auto;
+}
+
+nav ul li {
+    display: inline-block;
+    /* border: 2px solid black; */
+    margin: 0px auto;
+    position: relative;
+    right: 20px;
+    border-radius: 25px;
+    list-style-type: none;
+}
+
+.head1,
 .dropbtn {
     display: inline-block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
 }
 
-li a:hover,
-.dropdown:hover .dropbtn {
+.head1:hover {
     background-color: rgb(244, 223, 223);
+    box-shadow: 5px 4px;
+    border-radius: 25px;
 }
 
-.logo:hover {
-    background-color: rgb(182, 156, 156);
-}
-
-li.dropdown {
-    display: inline-block;
-}
+/* contact */
 
 .contact-content {
     display: none;
     position: absolute;
-    background-color: rgb(114, 199, 189);
-    min-width: 160px;
-    z-index: 1;
+    background-color: rgb(117, 243, 228);
+    width: 505px;
+    /* border: 2px solid red; */
+    top: 57px;
     border-radius: 15px;
 }
 
-.contact-content a:hover {
-    background-color: rgb(207, 241, 238);
-    border-radius: 15px;
+.head2 {
+    display: inline;
+    margin: 0px 5px;
+    font-size: 20px;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0px 10px;
 }
 
 .dropdown:hover .contact-content {
     display: block;
 }
 
-.head1 {
-    display: inline-block;
-    padding: 14px;
+.contact-content a:hover {
+    background-color: rgb(217, 241, 239);
+    opacity: 0.8;
+    border-radius: 15px;
+    z-index: 1;
+    color: #7c5858;
+}
+
+/* search box */
+
+.search {
+    /* border: 2px solid green; */
+    position: relative;
+    right: 75px;
+    float: right;
+    top: 15px;
+}
+
+#searchText {
+    border: 2px solid yellow;
+    border-radius: 25px;
+    font-size: 17px;
+    width: 110px;
 }
 
 .Detail-page {
@@ -96,57 +134,27 @@ li.dropdown {
     border-radius: 30px;
     font-family: 'Blaka Ink', cursive;
     background-color: rgb(198, 218, 216);
+    width: 35%;
+}
+
+.Detail-page h1 {
+    font-size: 40px;
+    text-align: center;
 }
 
 .form input {
     display: block;
     text-align: center;
-    border: 2px solid rgb(182, 156, 156);;
+    border: 2px solid rgb(182, 156, 156);
     margin: 15px auto;
     border-radius: 14px;
-}
-
-@media(max-width: 650px) {
-    .contact-content{
-        font-size: 19px;
-    }
-    .Detail-page{
-        margin: 40px auto;
-        padding: 15px 70px;
-    }
-
-    .form input{
-        font-size: 13px;
-        width: 100%;
-        margin: 10px 2px;
-    }
-    .Detail-page h1 {
-        text-align: center;
-        font-size: 18px;
-        margin: auto;
-    }
-}
-
-@media(min-width: 800px) {
-
-    .Detail-page{
-        width: 33%;
-        padding: 15px 50px;
-    }
-    .form input{
-        font-size: 25px;
-        width: 70%;
-    }
-
-    .Detail-page h1 {
-        text-align: center;
-        font-size: 41px;
-    }
+    font-size: 18px;
+    width: 50%;
 }
 
 .Detail-page button {
     display: block;
-    width: 70%;
+    width: 25%;
     margin: 20px auto;
     border-radius: 15px;
     font-size: 30px;
@@ -155,5 +163,99 @@ li.dropdown {
 }
 
 .Detail-page button:hover {
-    background-color: rgb(251, 242, 113);
+    background-color: #92824d;
+}
+
+/* responsive screen */
+
+@media screen and (max-width: 875px) {
+
+    .logo {
+        /* border: 2px solid yellow; */
+        margin: 0px 40%;
+    }
+
+    nav ul {
+        /* border: 2px solid #008000; */
+        margin: 0px 10px;
+    }
+
+    nav ul li {
+        /* border: 1px solid white; */
+        margin: 5px 0px;
+    }
+
+    .head1 {
+        font-size: 16px;
+        padding: 3px;
+    }
+
+    .contact-content {
+        display: none;
+        /* border: 2px solid red; */
+        width: auto;
+        top: 25px;
+        left: -47px;
+    }
+
+    .search {
+        position: static;
+    }
+
+    .searchText {
+        font-size: 16px;
+        /* width: 80px; */
+    }
+
+    .Detail-page {
+        /* margin: 60px auto; */
+        width: auto;
+    }
+
+    .Detail-page h1 {
+        font-size: 25px;
+    }
+
+    .Detail-page button {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+
+    .contact-content {
+        width: auto;
+    }
+
+    .form input {
+        width: 65%;
+        font-size: 16px;
+    }
+
+    .Detail-page button {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .form input {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .Detail-page button {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    /* .head::before{
+        width: 100%;
+    } */
+
+    .head h1{
+        font-size: 35px;
+        letter-spacing: 7px; 
+    }
 }
