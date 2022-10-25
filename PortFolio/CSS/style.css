@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+.container{
+    width: 500px;
+    height: 700px;
+    margin: auto;
+}
+.card{
+    position: relative;
+    width: 80%;
+    height: 70%;
+    margin: 50px auto;
+    border-radius: 15px;
+    background-color: antiquewhite;
+    box-shadow: 25px 25px 50px rgba(53, 150, 53, 0.25), -10px -10px 30px rgba(53, 150, 53, 0.1), inset -5px -5px 15px rgba(53, 150, 53, 0.5);
+}
+.top{
+    position: relative;
+    width: 80%;
+    height: 60%;
+    margin: auto;
+    top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: inset 3px 1px 15px green;
+}
+.top img{
+    display: block;
+    width: 92%;
+    height: 92%;
+    margin: 13px auto;
+    border-radius: 6px;
+}
+
+.bottom{
+    position: relative;
+    width: 80%;
+    height: 30%;
+    margin: auto;
+    top: 30px;
+    border-radius: 8px;
+}
+.bottom h1 {
+    font-size: 30px;
+    text-align: center;
+    margin: 8px auto 7px;
+    letter-spacing: 3px;
+    color: rgba(53, 150, 53);
+}
+.bottom h1 span{
+    font-size: 20px;
+    color: black;
+    position: relative;
+    bottom: 9px;
+    letter-spacing: 4px;
+}
+.list ul{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+.list li{
+    list-style: none;
+    margin: 0px 20px;
+    font-size: 34px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    box-shadow: 25px 25px 50px rgba(53, 150, 53, 0.25), -10px -10px 30px rgba(53, 150, 53, 0.1), inset -5px -5px 15px rgba(53, 150, 53, 0.5);
+}
+.list li a {
+    display: inline-block;
+    width: 40px;
+    height: 10px;
+    text-align: center;
+}
