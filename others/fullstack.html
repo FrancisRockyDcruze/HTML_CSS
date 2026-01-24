@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Full Stack Web Dev Work</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-slate-900 text-white">
+
+  <header class="text-center py-10">
+    <h1 class="text-4xl font-bold">Full Stack Web Dev Work</h1>
+    <p class="text-gray-400 mt-2">All projects</p>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4">
+
+    <!-- 👇 THIS IS WHERE ITEMS WILL APPEAR -->
+    <div id="fullstack-projects"
+         class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    </div>
+
+  </main>
+
+  <!-- IMPORTANT: correct path -->
+  <script src="fileList.js"></script>
+
+  <script>
+    const container = document.getElementById("fullstack-projects");
+
+    fullstackFiles.forEach(file => {
+      const a = document.createElement("a");
+      a.href = `fullstack_web_dev_work/${file}`;
+      a.className =
+        "group bg-slate-800 rounded-xl p-6 hover:bg-slate-700 transition shadow-lg";
+
+      const title = file
+        .replace(".html", "")
+        .replace(/[_-]/g, " ");
+
+      a.innerHTML = `
+        <h2 class="text-xl font-semibold group-hover:text-blue-400">
+          ${title}
+        </h2>
+        <p class="text-gray-400 text-sm mt-2">
+          Click to open
+        </p>
+      `;
+
+      container.appendChild(a);
+    });
+  </script>
+
+</body>
+</html>
