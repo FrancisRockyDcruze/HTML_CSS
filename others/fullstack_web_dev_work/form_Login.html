@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="CSS/registrationStyle.css"> -->
+    <style>
+        .header,
+.container,
+.footer {
+    position: absolute;
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    height: 40px;
+    top: 0;
+    background-color: aqua;
+    box-shadow: 0px 1px 15px black;
+    z-index: 1;
+}
+
+.container {
+    width: 100%;
+    background-color: darkgrey;
+    top: 40px;
+    bottom: 40px;
+    overflow: auto;
+}
+
+.signup_BX,
+.forgot_password {
+    display: none;
+}
+
+.signinBX,
+.signup_BX,
+.forgot_password {
+    position: absolute;
+    width: 50%;
+    background-color: blueviolet;
+    margin: 2% 25%;
+    height: 630px;
+    box-shadow: 0px 1px 15px black;
+
+}
+
+.signinBX .signinImg,
+.signinBX .signinform,
+.signup_BX .signinImg,
+.signup_BX .signinform,
+.forgot_password .signinImg,
+.forgot_password .signinform {
+    float: left;
+}
+
+.signinBX .signinImg,
+.signup_BX .signinImg,
+.forgot_password .signinImg {
+    width: 50%;
+    height: 100%;
+}
+
+.signinBX .signinImg img,
+.signup_BX .signinImg img,
+.forgot_password .signinImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.signinBX .signinform,
+.signup_BX .signinform,
+.forgot_password .signinform {
+    width: 50%;
+    height: 100%;
+    background-color: aqua;
+    /* position: relative; */
+}
+
+.signinBX .signinform .signinform_details,
+.signup_BX .signinform .signinform_details,
+.forgot_password .signinform .signinform_details {
+    border: 1px solid blue;
+    width: 80%;
+    margin: 3px auto;
+    border-radius: 20px;
+    position: relative;
+    bottom: 0;
+}
+
+.signinBX .signinform .signinform_details {
+    margin-top: 140px;
+}
+.forgot_password .signinform .signinform_details {
+    margin-top: 50px;
+}
+
+
+.signinBX .signinform .signinform_details h1,
+.signup_BX .signinform .signinform_details h1,
+.forgot_password .signinform .signinform_details h1 {
+    font-size: 100%;
+    margin-top: 15px;
+}
+
+.signinBX .signinform .signinform_details h2,
+.signup_BX .signinform .signinform_details h2,
+.forgot_password .signinform .signinform_details h2 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.signinform_details .forgotpass {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.signinBX .signinform .signinform_details ul,
+.signup_BX .signinform .signinform_details ul,
+.forgot_password .signinform .signinform_details ul {
+    margin: auto;
+    padding: 10px;
+}
+
+.signinBX .signinform .signinform_details ul li,
+.signup_BX .signinform .signinform_details ul li,
+.forgot_password .signinform .signinform_details ul li {
+    border: 5px solid white;
+    list-style: none;
+    margin: 10px;
+    padding: 4px;
+}
+
+.signinBX .signinform .signinform_details ul li input,
+.signup_BX .signinform .signinform_details ul li input,
+.forgot_password .signinform .signinform_details ul li input {
+    width: 100%;
+    background-color: rgb(228, 216, 216);
+    margin: 4px auto;
+    border-radius: 10px;
+    padding: 4px;
+    text-align: center;
+}
+
+.signinBX .signinform .signinform_details .signin_Btn,
+.signup_BX .signinform .signinform_details .submit_Btn,
+.forgot_password .signinform .signinform_details .sendEmail_Btn {
+    width: 45%;
+    height: 45px;
+    margin: 5px;
+    background-color: #164df3;
+    cursor: pointer;
+}
+
+.forgot_password .signinform .signinform_details .sendEmail_Btn 
+{
+    margin: 23px 5px;
+}
+
+.goto_signin {
+    border: 2px solid;
+    width: 60px;
+    border-radius: 20px;
+    font-size: 13px;
+    padding: 4px;
+    height: 30px;
+    font-weight: 500;
+    box-shadow: 0px 3px 8px gray;
+    margin: 68px 0 0 70%;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+    background-color: aqua;
+}
+    </style>
+    <link rel="stylesheet" href="CSS/mainStyle.css">
+    <title>Registration Page</title>
+</head>
+
+<body>
+    <div class="header">
+
+    </div>
+    <div class="container">
+        <div class="signinBX">
+            <div class="signinImg">
+                <img src="assets/pic1.jpg" alt="">
+            </div>
+            <div class="signinform">
+                <div class="signinform_details">
+                    <h1>SIGN IN</h1>
+                    <ul>
+                        <li><input type="text" name="uname" id="uname"></li>
+                        <li><input type="password" name="password" id="upass"></li>
+                        <h2 class="forgotpass" onclick="change_forgotPassword()">Forgot Password?</h2>
+                    </ul>
+                    <input type="button" value="LOGIN" id="signin_Btn" class="signin_Btn">
+                    <h2>Dont have an Account? <span onclick="change_Signup()"
+                            style="font-weight:700 ; text-decoration: underline; cursor: pointer;">SIGN UP</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="signup_BX">
+            <div class="signinform">
+                <div class="goto_signin" onclick="change_Signin()">Sign In</i></div>
+                <div class="signinform_details">
+                    <h1>SIGN UP</h1>
+                    <ul>
+                        <li><input type="text" name="uname" id="uname" placeholder="username"></li>
+                        <li><input type="password" name="uname" id="uname" placeholder="password"></li>
+                        <li><input type="password" name="uname" id="uname" placeholder="confirm password"></li>
+                        <li><input type="text" name="uname" id="uname" placeholder="Phone Number"></li>
+                        <li><input type="email" name="password" id="upass" placeholder="Em@il ID"></li>
+                    </ul>
+                    <input type="button" value="SUBMIT" id="submit_Btn" class="submit_Btn">
+                </div>
+            </div>
+            <div class="signinImg">
+                <img src="assets/pic1.jpg" alt="">
+            </div>
+        </div>
+        <div class="forgot_password">
+            <div class="signinImg">
+                <img src="assets/pic1.jpg" alt="">
+            </div>
+            <div class="signinform">
+                <div class="goto_signin" onclick="change_Signin()">Sign In</i></div>
+                <div class="signinform_details">
+                    <h1>FORGOT PASSWORD?</h1>
+                    <ul>
+                        <li><input type="email" name="uname" id="uname" placeholder="email id"></li>
+                    </ul>
+                    <input type="button" value="Send" id="sendEmail_Btn" class="sendEmail_Btn">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        Copyright Ⓒ FD || All Rights reserved
+    </div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/registration.js"></script>
+</html>

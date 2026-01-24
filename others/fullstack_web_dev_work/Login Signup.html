@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            transition: all 1s ease-out;
+
+        }
+
+        .container {
+            background-color: black;
+            width: 500px;
+            height: 550px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .sect {
+            width: 100%;
+            height: 100%;
+        }
+
+        .sect header {
+            color: aliceblue;
+            padding: 10px;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        .head {
+            margin: 0 20px;
+        }
+
+        .sect,
+        form,
+        .loginpg,
+        .signpg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 8px;
+        }
+
+        form {
+            background-image: linear-gradient(45deg, black, rgb(105, 101, 101), rgb(175, 160, 160));
+            width: 83%;
+            height: 70%;
+            justify-content: flex-start !important;
+        }
+
+        form .loginpg,
+        form .signpg {
+            width: 100%;
+            height: 100%;
+            justify-content: flex-start !important;
+        }
+
+        #check {
+            visibility: hidden;
+        }
+
+        #check:checked~form .loginpg,
+        #check:not(:checked)~form .signpg {
+            display: none;
+
+        }
+
+        .fa-circle-arrow-up {
+            color: rgb(8, 85, 153);
+            font-size: 35px;
+            border-radius: 50%;
+            transform: rotate(320deg);
+            transition: 1s;
+
+        }
+
+        #check:checked~label .fa-circle-arrow-up {
+            transform: translateX(49px) rotate(44deg);
+            transition: 1s;
+        }
+
+        .arrow-label {
+            position: relative;
+            bottom: 47px;
+            right: 24px;
+        }
+
+        .arrow-line {
+            background-color: beige;
+            width: 80px;
+            height: 18px;
+            border-radius: 15px;
+        }
+
+        form h2 {
+            color: aliceblue;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .label {
+            background-color: black;
+            color: beige;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            width: 80%;
+        }
+
+        .label input {
+            background-color: black;
+            color: aliceblue;
+            padding: 5px;
+            border: none;
+            outline: none;
+        }
+
+        button {
+            background-color: beige;
+            color: rgb(8, 85, 153);
+            padding: 15px 20px;
+            width: 110px;
+            border-radius: 8px;
+            border: none;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+        }
+
+        .forgot {
+            color: aliceblue;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sect">
+            <header>
+                <span class="head">LOG IN</span>
+                <span class="head">SIGN UP</span>
+            </header>
+            <div class="arrow-line"></div>
+            <input type="checkbox" id="check">
+            <label for="check" class="arrow-label"><i class="fa-solid fa-circle-arrow-up"></i></label>
+            <form action="">
+                <div class="loginpg">
+                    <h2>Log In</h2>
+                    <div class="label">
+                        <i class="fa-solid fa-at"></i>
+                        <input type="text" placeholder="Your Email">
+                    </div>
+                    <div class="label">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Your Password">
+                    </div>
+                    <button>SUBMIT</button>
+                    <a href="#" class="forgot">Forgot your password?</a>
+                </div>
+                <div class="signpg">
+                    <h2>Sign Up</h2>
+                    <div class="label">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text" placeholder="Your Name">
+                    </div>
+                    <div class="label">
+                        <i class="fa-solid fa-at"></i>
+                        <input type="text" placeholder="Your Email">
+                    </div>
+                    <div class="label">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Your Password">
+                    </div>
+                    <button>SUBMIT</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

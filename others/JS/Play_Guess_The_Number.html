@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var randNum = Math.floor(Math.random() * 10);
+            var userNum = 0, guessNum = 0, Correct_flg = false;
+            var chances = 3;
+            alert(`You Will Get ${chances} chances to guess the Number \n Have a Good Luck`);
+
+            do
+            {   
+                guessNum++;
+                userNum = prompt("Enter your Number");
+
+                if (guessNum < chances)
+                {
+                    if(userNum == randNum)
+                    {   
+                        Correct_flg = true;
+                        alert("Congrats You Have Guess The Correct Number \n Your winning % is : " + (100*(10-guessNum+1)/10) +"% \n\n Refresh The Page to Restart the Program");
+                    }
+                    else if(userNum == "" || userNum == 0 || userNum == "null" || userNum == null)
+                    {
+                        Correct_flg = true;
+                        alert("Your Input is blank \n Refresh The Page to Restart the Program");
+                    }
+                    else
+                    {   
+                        alert("Try Again!");
+                    }
+                }
+                else
+                {   
+                    Correct_flg = true;
+                    alert("Sorry No more Try Left!");
+                }
+            }
+            while(Correct_flg == false);
+        </script>        
+    </body>
+</html>

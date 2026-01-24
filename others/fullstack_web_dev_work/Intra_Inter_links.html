@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Intra & Inter Link</title>
+        <style>
+            #container
+            {
+                display:grid;
+                grid-template-columns: 3fr 9fr;
+            }
+
+            .leftblock
+            {
+                border: 2px solid;
+            }
+            .leftblock1 ul
+            {
+                width: 80%;
+                /* height: 300px; */
+                margin: 10px auto;
+
+            }
+            .leftblock1 li
+            {
+                background-color: green;
+                color: #fff;
+                border: 2px solid #fff;
+                padding: 20px;
+                text-align: center;
+                margin-right: 35px;
+                margin-top: 10px;
+                font-size: 20px;
+            }
+            .leftblock1 li a, .leftblock2 li a
+            {
+                text-decoration: none;
+                color: #fff;
+            }
+
+            .leftblock2 h2
+            {
+                border: 2px solid;
+                background-color: #fff;
+                color: green;
+                text-align: center;
+            }
+
+            .leftblock2 ul
+            {
+                display: flex;
+                margin-left: -44px;
+            }
+
+            .leftblock2 li
+            {
+                list-style: none;
+                margin: auto;
+                background-color: green;
+                color: #fff;
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 3px 3px 5px black;
+            }
+            .rightblock
+            {
+                overflow: auto;
+                height: 550px;
+                border: 2px solid;
+                padding: 20px;
+            }
+
+            #html, #css, #JS
+            {
+                background-color: green;
+                color: #fff;
+                text-align: center;
+            }
+            .topic
+            {
+                background-color: rgb(232, 252, 203);
+            }
+            #html:target, #css:target, #JS:target
+            {
+                background-color: #89fa93;
+                color: green;
+                list-style: none;
+                border: 2px solid;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="leftblock">
+                <div class="leftblock1">
+                    <ul>
+                        <li><a href="#html">HTML</a></li>
+                        <li><a href="#css">CSS</a></li>
+                        <li><a href="#JS">Javascript</a></li>
+                    </ul>
+                </div>
+                <div class="leftblock2">
+                    <h2>MDN Tutorial <span>[Inter Links]</span></h2>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JS</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rightblock">
+                <h1 id="html">HTML</h1>
+                <div class="topic">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis voluptatibus libero vero magnam eveniet reprehenderit pariatur laudantium debitis suscipit molestias, esse corporis commodi quidem nesciunt. Quo modi velit aliquid quae?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis voluptatibus libero vero magnam eveniet reprehenderit pariatur laudantium debitis suscipit molestias, esse corporis commodi quidem nesciunt. Quo modi velit aliquid quae?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis voluptatibus libero vero magnam eveniet reprehenderit pariatur laudantium debitis suscipit molestias, esse corporis commodi quidem nesciunt. Quo modi velit aliquid quae?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aut veniam molestiae iste omnis quia modi, nostrum similique dolor. Nihil, adipisci. Esse eligendi sint laboriosam quidem vero earum sit cum inventore exercitationem quisquam, minus facilis eum.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis voluptatibus libero vero magnam eveniet reprehenderit pariatur laudantium debitis suscipit molestias, esse corporis commodi quidem nesciunt. Quo modi velit aliquid quae?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aut veniam molestiae iste omnis quia modi, nostrum similique dolor. Nihil, adipisci. Esse eligendi sint laboriosam quidem vero earum sit cum inventore exercitationem quisquam, minus facilis eum.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis voluptatibus libero vero magnam eveniet reprehenderit pariatur laudantium debitis suscipit molestias, esse corporis commodi quidem nesciunt. Quo modi velit aliquid quae?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aut veniam molestiae iste omnis quia modi, nostrum similique dolor. Nihil, adipisci. Esse eligendi sint laboriosam quidem vero earum sit cum inventore exercitationem quisquam, minus facilis eum.</p>
+                </div>
+                <h1 id="css">CSS</h1>
+                <div class="topic">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis voluptatibus libero vero magnam eveniet reprehenderit pariatur laudantium debitis suscipit molestias, esse corporis commodi quidem nesciunt. Quo modi velit aliquid quae?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis voluptatibus libero vero magnam eveniet reprehenderit pariatur laudantium debitis suscipit molestias, esse corporis commodi quidem nesciunt. Quo modi velit aliquid quae?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis voluptatibus libero vero magnam eveniet reprehenderit pariatur laudantium debitis suscipit molestias, esse corporis commodi quidem nesciunt. Quo modi velit aliquid quae?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aut veniam molestiae iste omnis quia modi, nostrum similique dolor. Nihil, adipisci. Esse eligendi sint laboriosam quidem vero earum sit cum inventore exercitationem quisquam, minus facilis eum.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis voluptatibus libero vero magnam eveniet reprehenderit pariatur laudantium debitis suscipit molestias, esse corporis commodi quidem nesciunt. Quo modi velit aliquid quae?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aut veniam molestiae iste omnis quia modi, nostrum similique dolor. Nihil, adipisci. Esse eligendi sint laboriosam quidem vero earum sit cum inventore exercitationem quisquam, minus facilis eum.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis voluptatibus libero vero magnam eveniet reprehenderit pariatur laudantium debitis suscipit molestias, esse corporis commodi quidem nesciunt. Quo modi velit aliquid quae?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aut veniam molestiae iste omnis quia modi, nostrum similique dolor. Nihil, adipisci. Esse eligendi sint laboriosam quidem vero earum sit cum inventore exercitationem quisquam, minus facilis eum.</p>
+                </div>
+                <h1 id="JS">Javascript</h1>
+                <div class="topic">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis voluptatibus libero vero magnam eveniet reprehenderit pariatur laudantium debitis suscipit molestias, esse corporis commodi quidem nesciunt. Quo modi velit aliquid quae?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis voluptatibus libero vero magnam eveniet reprehenderit pariatur laudantium debitis suscipit molestias, esse corporis commodi quidem nesciunt. Quo modi velit aliquid quae?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis voluptatibus libero vero magnam eveniet reprehenderit pariatur laudantium debitis suscipit molestias, esse corporis commodi quidem nesciunt. Quo modi velit aliquid quae?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aut veniam molestiae iste omnis quia modi, nostrum similique dolor. Nihil, adipisci. Esse eligendi sint laboriosam quidem vero earum sit cum inventore exercitationem quisquam, minus facilis eum.</p>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

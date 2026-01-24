@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-in">
+    <head>
+        <title>Order List 2</title>
+        <style>
+            div
+            {
+                width: 800px;
+                border: 2px solid;
+                margin: auto;
+                font-size: 20px;
+                padding: 10px;
+            }
+            h2
+            {
+                text-align: center;
+                background-color: #000;
+                color: #fff;
+            }
+            .quest
+            {
+                margin-bottom: 15px;
+            }
+            .option
+            {
+                margin-top: 10px;
+            }
+            #flexShow
+            {
+                display: flex;
+            }
+            #flexShow li
+            {
+                margin-right: 50px;
+            }
+
+            #gridShow
+            {
+                display: grid;
+                grid-template-columns: 6fr 6fr;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h2>MCQ</h2>
+            <ol class="container">
+                <li class="quest"> The brain of the computer is ______.
+                    <ol type="a" class="option">
+                        <li>Mouse</li>
+                        <li>CPU</li>
+                        <li>keyboard</li>
+                    </ol>
+                </li>
+                <li class="quest"> _________ is the process of converting chars into token.
+                    <ol type="a" class="option" id="flexShow">
+                        <li>Painting </li>
+                        <li>Tokenization</li>
+                        <li>Elementation</li>
+                    </ol>
+                </li>
+                <li class="quest"> Who invented HTML ______.
+                    <ol type="a" class="option" id="gridShow">
+                        <li>Tim Berners Lee</li>
+                        <li>Brendan Eich</li>
+                        <li>Charles Babbage</li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+    </body>
+</html>

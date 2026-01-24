@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Table2</title>
+    <style>
+        body {
+            font-family: monospace;
+            text-transform: uppercase;
+            background-image: url('assets/pic1.jpg');
+        }
+
+        table {
+            background-image: url("assets/pic1.jpg"), url("assets/pic1.jpg");
+            background-size: 50% 100%;
+            background-repeat: no-repeat;
+            background-position: left, right;
+            border-radius: 18px;
+
+        }
+
+        thead,
+        tbody,
+        td,
+        th {
+            background-color: #00000021;
+            border: none;
+        }
+
+        td {
+            font-size: 45px;
+        }
+
+        .th {
+            font-size: 50px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <table width="100%" frame="void" border="1" cellspacing="20" cellpadding="30"
+        style="font-size: 30px; margin-top: 30px; color: #fff;">
+        <!-- <caption style="color: green">Movie list</caption> -->
+        <!-- <colgroup span="1"></colgroup> -->
+        <thead bgcolor="green" class="thead1">
+            <tr class="tr1">
+                <th class="th th1">SUBJECTS</th>
+                <th class="th th2">CLASS</th>
+            </tr>
+        </thead>
+        <tbody bgcolor="#fff" style="color: #fff; font-weight: bold;" align="center">
+            <tr>
+                <td>Computer</td>
+                <td rowspan="2">V - X</td>
+            </tr>
+            <tr>
+                <td>Mathematics</td>
+            </tr>
+            <tr>
+                <td colspan="2">Contact: 8777219553 [Only 2 Days in a WEEK]</td>
+            </tr>
+
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+    <th></th>
+    <tr></tr>
+    <td></td>
+</body>
+
+</html>

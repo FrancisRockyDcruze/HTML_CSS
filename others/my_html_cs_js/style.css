@@ -1,0 +1,138 @@
+body{
+    background-color: black;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+
+.header, .main, .footer
+{
+    position: absolute;
+    border: 1px solid white;
+    left: 5px;
+    right: 5px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.header
+{
+    top: 10px;
+}
+
+.main
+{
+    top: 70px;
+    bottom: 70px;  
+    overflow: auto;
+}
+.left, .right
+{
+    border: 1px solid;  
+    float: left; 
+    margin: 5px;
+    padding: 10px;
+}
+
+.left
+{
+    width: 30%;
+    position: absolute;
+}
+.right
+{
+    width: 64%;
+    height: 70vh;
+    position: absolute;
+    right: 0;
+    overflow: auto;
+}
+
+.empDetails
+{
+    margin: 5px;
+    border: 2px solid white;
+    padding: 10px;
+}
+
+.empDetails li
+{
+    /* border: 1px solid white; */
+    margin: auto;
+padding: 5px;
+width: 85%;
+list-style: none;
+}
+
+.empDetails li div
+{
+    margin: 5px;
+}
+.empDetails li .error
+{
+    display: none;
+    color: red;
+    border: 1px solid white;
+    width: 63%;
+    background-color: aliceblue;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 3px;
+    margin: auto;
+    box-shadow: 0px 0px 30px white;
+}
+
+.card
+{
+    border: 1px solid white;
+    width: 300px;
+    height: 274px;
+    border-radius: 20px 0 20px 0;
+    float: left;
+    margin: 10px 6%;
+}
+
+.card:nth-child(odd)
+{
+    box-shadow: 5px 5px 20px white;
+
+}
+
+.card:nth-child(even)
+{
+    box-shadow: -5px 5px 20px white;
+
+}
+
+.cardList
+{
+    /* border: 1px solid white; */
+    width: 90%;
+    margin: 5px auto;
+    padding: 8px;
+}
+.cardList li{
+    list-style: none;
+    border: 1px solid white;
+    margin: 10px 3px;
+padding: 7px;
+    text-align: left;
+}
+
+.cardList li:nth-child(even){
+    border-radius: 0 15px 0 15px;
+
+}
+.cardList li:nth-child(odd){
+    border-radius: 15px 0 15px 0;
+}
+.cardList li div
+{
+    display: inline-block;
+    font-size: 18px;
+}
+.footer
+{
+    bottom: 10px;
+}

@@ -1,76 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My HTML/CSS Projects</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My HTML/CSS Projects</title>
 
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<body class="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
+  <body
+    class="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white"
+  >
+    <!-- Header -->
+    <header class="text-center py-10">
+      <h1 class="text-4xl font-bold mb-2">🚀 My HTML & CSS Projects</h1>
+      <p class="text-gray-400">
+        A collection of mini projects hosted on GitHub Pages
+      </p>
+    </header>
 
-  <!-- Header -->
-  <header class="text-center py-10">
-    <h1 class="text-4xl font-bold mb-2">🚀 My HTML & CSS Projects</h1>
-    <p class="text-gray-400">A collection of mini projects hosted on GitHub Pages</p>
-  </header>
+    <!-- Projects Grid -->
+    <main class="max-w-5xl mx-auto px-4">
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Project Card -->
+        <a
+          href="Album/Album.html"
+          class="group bg-slate-800 rounded-xl p-6 hover:bg-slate-700 transition shadow-lg hover:shadow-xl"
+        >
+          <h2 class="text-xl font-semibold group-hover:text-blue-400">
+            📸 Album
+          </h2>
+          <p class="text-gray-400 text-sm mt-2">Image album layout project</p>
+        </a>
 
-  <!-- Projects Grid -->
-  <main class="max-w-5xl mx-auto px-4">
-    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <a
+          href="Cube3D/cube.html"
+          class="group bg-slate-800 rounded-xl p-6 hover:bg-slate-700 transition shadow-lg hover:shadow-xl"
+        >
+          <h2 class="text-xl font-semibold group-hover:text-blue-400">
+            🧊 3D Cube
+          </h2>
+          <p class="text-gray-400 text-sm mt-2">CSS 3D cube animation</p>
+        </a>
 
-      <!-- Project Card -->
-      <a href="Album/Album.html"
-         class="group bg-slate-800 rounded-xl p-6 hover:bg-slate-700 transition shadow-lg hover:shadow-xl">
-        <h2 class="text-xl font-semibold group-hover:text-blue-400">📸 Album</h2>
-        <p class="text-gray-400 text-sm mt-2">Image album layout project</p>
-      </a>
+        <a
+          href="PetsZone/index.html"
+          class="group bg-slate-800 rounded-xl p-6 hover:bg-slate-700 transition shadow-lg hover:shadow-xl"
+        >
+          <h2 class="text-xl font-semibold group-hover:text-blue-400">
+            🐾 PetsZone
+          </h2>
+          <p class="text-gray-400 text-sm mt-2">Pet care themed website</p>
+        </a>
 
-      <a href="Cube3D/cube.html"
-         class="group bg-slate-800 rounded-xl p-6 hover:bg-slate-700 transition shadow-lg hover:shadow-xl">
-        <h2 class="text-xl font-semibold group-hover:text-blue-400">🧊 3D Cube</h2>
-        <p class="text-gray-400 text-sm mt-2">CSS 3D cube animation</p>
-      </a>
+        <a
+          href="Portmorphism/PortFolio.html"
+          class="group bg-slate-800 rounded-xl p-6 hover:bg-slate-700 transition shadow-lg hover:shadow-xl"
+        >
+          <h2 class="text-xl font-semibold group-hover:text-blue-400">
+            🎨 Portmorphism
+          </h2>
+          <p class="text-gray-400 text-sm mt-2">Creative portfolio design</p>
+        </a>
 
-      <a href="PetsZone/index.html"
-         class="group bg-slate-800 rounded-xl p-6 hover:bg-slate-700 transition shadow-lg hover:shadow-xl">
-        <h2 class="text-xl font-semibold group-hover:text-blue-400">🐾 PetsZone</h2>
-        <p class="text-gray-400 text-sm mt-2">Pet care themed website</p>
-      </a>
+        <a
+          href="RegistrationForm/index.html"
+          class="group bg-slate-800 rounded-xl p-6 hover:bg-slate-700 transition shadow-lg hover:shadow-xl"
+        >
+          <h2 class="text-xl font-semibold group-hover:text-blue-400">
+            📝 Registration Form
+          </h2>
+          <p class="text-gray-400 text-sm mt-2">Responsive form UI</p>
+        </a>
 
-      <a href="Portmorphism/PortFolio.html"
-         class="group bg-slate-800 rounded-xl p-6 hover:bg-slate-700 transition shadow-lg hover:shadow-xl">
-        <h2 class="text-xl font-semibold group-hover:text-blue-400">🎨 Portmorphism</h2>
-        <p class="text-gray-400 text-sm mt-2">Creative portfolio design</p>
-      </a>
+        <a
+          href="Report_Card/index.html"
+          class="group bg-slate-800 rounded-xl p-6 hover:bg-slate-700 transition shadow-lg hover:shadow-xl"
+        >
+          <h2 class="text-xl font-semibold group-hover:text-blue-400">
+            📊 Report Card
+          </h2>
+          <p class="text-gray-400 text-sm mt-2">Student report card layout</p>
+        </a>
 
-      <a href="RegistrationForm/index.html"
-         class="group bg-slate-800 rounded-xl p-6 hover:bg-slate-700 transition shadow-lg hover:shadow-xl">
-        <h2 class="text-xl font-semibold group-hover:text-blue-400">📝 Registration Form</h2>
-        <p class="text-gray-400 text-sm mt-2">Responsive form UI</p>
-      </a>
+        <a
+          href="Rothko_Painting/index.html"
+          class="group bg-slate-800 rounded-xl p-6 hover:bg-slate-700 transition shadow-lg hover:shadow-xl"
+        >
+          <h2 class="text-xl font-semibold group-hover:text-blue-400">
+            🖌 Rothko Painting
+          </h2>
+          <p class="text-gray-400 text-sm mt-2">CSS art inspired by Rothko</p>
+        </a>
 
-      <a href="Report_Card/index.html"
-         class="group bg-slate-800 rounded-xl p-6 hover:bg-slate-700 transition shadow-lg hover:shadow-xl">
-        <h2 class="text-xl font-semibold group-hover:text-blue-400">📊 Report Card</h2>
-        <p class="text-gray-400 text-sm mt-2">Student report card layout</p>
-      </a>
+        <a
+          href="others"
+          class="group bg-slate-800 rounded-xl p-6 hover:bg-slate-700 transition shadow-lg hover:shadow-xl"
+        >
+          <h2 class="text-xl font-semibold group-hover:text-blue-400">
+            🧩 Other Projects
+          </h2>
+          <p class="text-gray-400 text-sm mt-2">
+            Small experiments & practice work
+          </p>
+        </a>
+      </div>
+    </main>
 
-      <a href="Rothko_Painting/index.html"
-         class="group bg-slate-800 rounded-xl p-6 hover:bg-slate-700 transition shadow-lg hover:shadow-xl">
-        <h2 class="text-xl font-semibold group-hover:text-blue-400">🖌 Rothko Painting</h2>
-        <p class="text-gray-400 text-sm mt-2">CSS art inspired by Rothko</p>
-      </a>
-
-    </div>
-  </main>
-
-  <!-- Footer -->
-  <footer class="text-center text-gray-500 py-8 mt-12">
-    © 2026 • Built with ❤️ using HTML, CSS & Tailwind
-  </footer>
-
-</body>
+    <!-- Footer -->
+    <footer class="text-center text-gray-500 py-8 mt-12">
+      © 2026 • Built with ❤️ using HTML, CSS & Tailwind
+    </footer>
+  </body>
 </html>

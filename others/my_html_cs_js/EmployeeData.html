@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="header">
+            EMPLOYEE DATA FORUM
+        </div>
+        <div class="main">
+            <div class="left">
+                <div class="title">Calculate Taxable Amount</div>
+                <ul class="empDetails">
+                    <li>
+                        <div class="txtLabel">Employee Name:</div>
+                        <div class="controller"><input type="text" id="ename" onkeydown="removeNameAlert()"></div>
+                        <div class="nameErr error">Please enter Employee name</div>
+                    </li>
+                    <li>
+                        <div class="txtLabel">Employee Age:</div>
+                        <div class="controller"><input type="text" id="eage" onkeydown="removeAgeAlert()"></div>
+                        <div class="ageErr error">Please enter Employee Age</div>
+                    </li>
+                    <li>
+                        <div class="txtLabel">Employee Gender:</div>
+                        <span class="controller">
+                            <input type="radio" value="Male" name="gender" checked>Male
+                            <input type="radio" value="Female" name="gender">Female
+                        </span>
+                    </li>
+                    <li>
+                        <div class="txtLabel">Employee Basic Salary:</div>
+                        <div class="controller"><input type="text" id="basicSalary" onkeydown="removeSalaryAlert()"></div>
+                        <div class="salaryErr error">Please enter Employee Salary</div>
+                    </li>
+                    <li>
+                        <div class="txtLabel">Employee Dept.</div>
+                        <div class="controller">
+                            <select name="" id="empDept">
+                                <option value="IT">IT</option>
+                                <option value="Sales">Sales</option>
+                                <option value="Accounts">Accounts</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="button" value="Generate Payslip" onclick="generatePaySlip()">
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+            </div>
+        </div>
+        <div class="footer">
+            Copyright ⓒ FD
+        </div>
+    </body>
+    <script src="Script/EmployeeData.js"></script>
+    <script src="Libs/TotalSalaryUtil.js"></script>
+
+</html>
